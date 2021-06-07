@@ -1,9 +1,27 @@
+@import "globales.less";
 .articulo--principal {
     max-width: 660px;
     margin: 0 auto;
+    &__intro {
+	font-size: @Fuentebase + 8%;
+    animation: opacityTranslate 1s ease-in;
+    }
+    @keyframes opacityTranslate {
+        0% {
+            transform: translateX(-300px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
     h2 {
         margin: 40px 0px 40px 0px;
         font-size: 50px;
         text-align: center;
+    }
+    h3 {
+        color: @color-secundario;
     }
 }

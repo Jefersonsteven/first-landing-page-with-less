@@ -1,3 +1,4 @@
+@import "globales.less";
 .intro {
 	width: 1340px;
 	height: 650px;
@@ -5,6 +6,9 @@
 	display: flex;
 	justify-content: center;
 	position: relative;
+	margin: 20px 0px 20px 0px;
+	background-color: @color-claro;
+	.sombra-caja;
 	&__image {
 		width: 1320px;
 		position: absolute;
@@ -23,13 +27,23 @@
 		color: @color-claro;
 	}
 	&__categoria {
-		font-family: @Font2;
-		text-transform: uppercase;
+		color: fade(@color-claro, 50%);
+		.oswald;
 	}
 	&__titulo {
-		font-family: @Font2;
+		font-family: @Fuente2;
 		text-transform: uppercase;
 		font-size: 50px;
+		line-height: @Fuentebase + 50%;
+		animation: opacity 2s ease-in;
+	}
+	@keyframes opacity {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
 	}
 	&__autor {
 		display: flex;
@@ -38,10 +52,12 @@
 		margin: 0 auto;
 		position: absolute;
 		top: 400px;
-		color: @color-claro;
 		text-align: center;
+		color: @color-claro;
+		line-height: @Fuentebase + 2%;
 		&-titulo {
 			margin-top: 5px;
+		color: fade(@color-claro, 50%);
 		}
 		img {
 			border-radius: 15px;
