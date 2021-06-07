@@ -1,0 +1,1 @@
+{"version":3,"sources":["articulos.less"],"names":[],"mappings":"AAAA,qBACI,UAAA,MACA,OAAA,EAAA,KAFJ,wBAIQ,OAAA,KAAA,EACA,UAAA,KACA,WAAA","file":"articulos.min.css","sourcesContent":[".articulo--principal {\n    max-width: 660px;\n    margin: 0 auto;\n    h2 {\n        margin: 40px 0px 40px 0px;\n        font-size: 50px;\n        text-align: center;\n    }\n}"]}
